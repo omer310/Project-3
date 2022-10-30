@@ -1,6 +1,7 @@
-CREATE DATABASE major_database;
+CREATE DATABASE api;
 
-CREATE TABLE major(
-    major_id SERIAL PRIMARY KEY, 
-    description VARCHAR(300)
+CREATE TABLE users(
+    SERIAL PRIMARY KEY, 
+    name VARCHAR(30),
+    major VARCHAR(30)
 );
