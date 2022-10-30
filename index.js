@@ -7,6 +7,7 @@ app.use(express.json());
 //ROUTES//
 
 //name 
+
 app.post("/name" , async(req , res) => {
 try{
     const { description } = req.body;
@@ -14,8 +15,9 @@ try{
     [description]);
 
 }catch(err){
+
     console.error(err.message);
-    
+
 }
 
 });
